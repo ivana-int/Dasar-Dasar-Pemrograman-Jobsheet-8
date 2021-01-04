@@ -1,0 +1,11 @@
+import numpy as np 
+  
+B = int(input("Masukkan jumlah baris :")) 
+K = int(input("Masukkan jumlah kolom :")) 
+  
+print("Masukkan angka matriks dalam satu baris (Pisahkan dengan spasi) : ") 
+  
+masuk = list(map(int, input().split())) 
+
+matriks= np.array(masuk).reshape(B, K) 
+print(matriks)
